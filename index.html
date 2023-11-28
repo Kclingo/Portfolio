@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+    </div><div class="wrapper">
+
+
+        <h6> UX / UI / Graphic Design</h6>
+        <h3></h3>
+        <h2>Kevan Clingo</h2>
+        <h5>Welcome to my Website</h5>
+
+        <nav class="tabs">
+          <div class="selector"></div>
+          <a href="index.html" class="active"><i class="home"></i>Home</a>
+          <a href="Work.html"><i class="Work"></i>Work</a>
+          <a href="contact.html"><i class="contact"></i>contact</a>
+          <a href="About.html"><i class="about"></i>About</a>
+        </nav>
+        <nav class="tabs">
+            <div class="selector"></div>
+
+    </div>
+
+
+
+<div class="Phone"></div>
+        <video muted autoplay loop plays-inline width="268px" class="video">
+           <source src="Images/phone video.mp4" type="video/mp4">
+        </video>
+
+
+            <a href=""><img src="Images/phone floating.png" alt="Phone" class="Phone"></a></div>
+
+
+        </div></div></div></div>
+
+
+
+<div class="box"></div>
+
+
+
+
+</body>
+</html>
+
+<style>
+
+.background{
+        background-color: #424242;
+    }
+Phone{
+    display:;
+}
+.all{
+    transform:translateY(80px)
+}
+img{
+    flex:auto
+    position: center;
+}
+.box{
+    background-color: #c9c9c9;
+    min-width: 50px;
+    min-height: 50px;
+    transform:translateY(20px)
+}
+
+video{
+position: absolute;
+margin-top: 200px;
+max-width: fit-content;
+flex-wrap: wrap;
+z-index: 50;
+border-radius:25px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.nav_link {
+    color:#05abe0;
+    font size: 200px;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(199, 199, 199)
+}
+
+h2{
+  margin:0px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  text-shadow: 0px 1px 2px #00000041;
+}
+h3{
+    font-size: 15px;
+    margin:0px;
+  color:#777;
+
+}
+h5{
+  margin:0px;
+  color:#777;
+
+}
+h6{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    -webkit-text-stroke: 1px #b6b6b6c0;
+    text-shadow: 0px 2px 4px #0000006e;
+
+
+}
+.wrapper{
+  text-align:center;
+  margin:50px auto;
+}
+
+.tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#424242;
+  box-shadow:0px 5px 15px rgba(0, 0, 0, 0.356);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #979797;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs a.active{
+  color:#00ffc8;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+.background{
+    background: #05abe0;
+}
+.selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+</style>
+
+<script>
+
+document.getElementById("Portfolio.html")
+tabs = $('.tabs');
+var selector = $('.tabs').find('a').length;
+//var selector = $(".tabs").find(".selector");
+var activeItem = tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+  "left": activeItem.position.left + "px",
+  "width": activeWidth + "px"
+});
+
+$(".tabs").on("click","a",function(e){
+  e.preventDefault();
+  $('.tabs a').removeClass("active");
+  $(this).addClass('active');
+  var activeWidth = $(this).innerWidth();
+  var itemPos = $(this).position();
+  $(".selector").css({
+    "left":itemPos.left + "px",
+    "width": activeWidth + "px"
+  });
+}); > </script>

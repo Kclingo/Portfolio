@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1> </h1>
+        <h6> UX / UI / Graphic Design</h6>
+        <h3></h3>
+        <h2>Kevan Clingo</h2>
+        <h5>Welcome to my Website</h5>
+
+
+        <nav class="tabs">
+          <div class="selector"></div>
+          <a href="index.html"><i class="home"></i>Home</a>
+          <a href="Work.html" class="active"><i class="Work"></i>Work</a>
+          <a href="contact.html"><i class="contact"></i>contact</a>
+          <a href="About.html"><i class="about"></i>About</a>
+        </nav>
+
+        <h4>
+
+        </h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="container">
+    <div class="main">
+    <h1>Need Work? <div class="roller">
+      <span id="rolltext">UX/UI<br/>
+      Graphics<br/>
+     Vectors<br/>
+        Design<br/>
+      <br/>Vectors<br/><br/>
+
+      <span id="spare-time">too much spare time?</span><br/>
+      </div>
+      </h1>
+
+    </div>
+</div>
+    </b></h4></div>
+
+
+    </p>
+
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+
+    document.getElementById("Portfolio.html")
+    tabs = $('.tabs');
+    var selector = $('.tabs').find('a').length;
+    //var selector = $(".tabs").find(".selector");
+    var activeItem = tabs.find('.active');
+    var activeWidth = activeItem.innerWidth();
+    $(".selector").css({
+      "left": activeItem.position.left + "px",
+      "width": activeWidth + "px"
+    });
+
+    $(".tabs").on("click","a",function(e){
+      e.preventDefault();
+      $('.tabs a').removeClass("active");
+      $(this).addClass('active');
+      var activeWidth = $(this).innerWidth();
+      var itemPos = $(this).position();
+      $(".selector").css({
+        "left":itemPos.left + "px",
+        "width": activeWidth + "px"
+      });
+    }); > </script>
+
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container {
+  border-radius: 15px;
+  background-color: #2c2c2c;
+  padding: 20px;
+    color:#ffffff;
+  max-width: 500px;
+  max-height: 500px;
+
+}
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Arvo';
+}
+
+main{
+  height:100vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE;
+  font-size: 4rem;
+
+}
+
+.roller{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #eeff00;
+}
+
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE;
+  font-size: 2.125rem;
+}
+}
+h6{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+fieldset{
+    margin:2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    min-width: 200px;
+
+}
+font{
+    font-size: xx-large;
+    padding-bottom: 0px;
+    color: #ffffff7c;
+}
+legend{
+    font-size: small;
+    padding: 0 .25em;
+    color: #999;
+}
+h4{
+    font-size: x-large;
+    color: #3f3f3f;
+}
+img{
+    position: center;
+    padding-top: 55px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+  input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #bbb942;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form{
+
+    border-radius: 4px;
+}
+
+video{
+    position: absolute;
+margin-top: 230px;
+max-width: fit-content;
+flex-wrap: wrap;
+z-index: 50;
+border-radius:25px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.nav_link {
+    color:#05abe0;
+    font size: 200px;
+}
+
+.centered{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+box{
+    text-align: center;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background: linear-gradient(-30deg, #a8a8a8, #808080);
+
+}
+  @keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+  }
+p{
+    font-size: 20px ;
+    color: #ffffff;
+    padding-top: 0px;
+    position: center;
+
+}
+parent{
+    width:100vw;
+    height: 100vh;
+    position: relative;
+}
+.card {
+    border-style: solid;
+    border-color: rgb(165, 165, 165);
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #5a5a5a;
+    height: 200px;
+    width: 344px;
+    padding-top: 10px;
+    padding-left: 100px;
+    transition: all 300ms ease-in-out;
+}
+.card:hover {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.300)
+}
+
+body{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #222222c7;
+}
+
+h2{
+  margin:0px;
+  text-transform: uppercase;
+  color: #fffb00;
+  text-shadow: 0px 2px 4px #0000007c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3{
+    font-size: 15px;
+    margin:0px;
+  color:#777;
+
+}
+h4{
+    color: #ffffff;
+}
+h5{
+  margin:0px;
+  color:#777;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+h6{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    -webkit-text-stroke: 1px #46464693;
+    text-shadow: 0px 2px 4px #0000007c;
+
+}
+.wrapper{
+  text-align:center;
+  margin:50px auto;
+}
+
+.tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#424242;
+  box-shadow:0px 5px 15px rgba(0, 0, 0, 0.356);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #979797;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.tabs a.active{
+  color:#fffc3c;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+
+.selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }}
+</style>
